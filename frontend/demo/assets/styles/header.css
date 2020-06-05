@@ -1,0 +1,43 @@
+.demo-header {
+  width: 100%;
+  color: #3a7bd5;
+  display: flex;
+  justify-content: space-between;
+  max-width: 1300px;
+  margin: auto;
+  padding: 40px 0px;
+}
+.demo-body {
+  width: 100%;
+  color: #3a7bd5;
+  display: flex;
+  justify-content: space-between;
+  margin-left: -100%;
+  padding: 40px 0px;
+}
+
+.demo-header--title {
+  font-size: 24px;
+  font-weight: 600;
+  color: #3a7bd5;
+}
+
+.demo-header--links {
+  width: 200px;
+  display: flex;
+  justify-content: space-between;
+  font-size: 18px;
+  font-weight: 500;
+}
+
+.demo-header--links a,
+.demo-header--title a {
+  color: #3a7bd5;
+  text-decoration: none;
+  cursor: pointer;
+}
+
+.demo-header--links a:hover,
+.demo-header--title a:hover {
+  color: #3a7bd5;
+}

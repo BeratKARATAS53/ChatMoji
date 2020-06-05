@@ -1,0 +1,49 @@
+{
+  "homepage": "http://ChatMoji.github.io/nlp-project",
+  "name": "chat-moji",
+  "version": "0.1.1",
+  "description": "chat-moji React Chat Application",
+  "main": "lib/index.js",
+  "module": "es/index.js",
+  "files": [
+    "css",
+    "es",
+    "lib",
+    "umd"
+  ],
+  "scripts": {
+    "predeploy": "npm run build",
+    "deploy": "gh-pages -d build",
+    "build": "nwb build-react-component --copy-files",
+    "clean": "nwb clean-module && nwb clean-demo",
+    "lint": "eslint src demo/src",
+    "start": "nwb serve-react-demo",
+    "gh:publish": "nwb build-demo && gh-pages -d demo/dist"
+  },
+  "dependencies": {
+    "axios": "^0.19.2",
+    "emoji-js": "3.2.2",
+    "prop-types": "15.5.10",
+    "react-chat-window": "^1.2.1",
+    "react-highlight.js": "1.0.5",
+    "react-linkify": "^0.2.1",
+    "socket.io-client": "2.0.3"
+  },
+  "peerDependencies": {
+    "react": "15.x"
+  },
+  "devDependencies": {
+    "babel-eslint": "^10.0.1",
+    "eslint": "^5.13.0",
+    "eslint-plugin-react": "^7.20.0",
+    "gh-pages": "^1.2.0",
+    "nwb": "^0.25.2",
+    "react": "15.6.1",
+    "react-dom": "15.6.1"
+  },
+  "author": "kingofthestack",
+  "license": "MIT",
+  "keywords": [
+    "react-component"
+  ]
+}
