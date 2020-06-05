@@ -64,10 +64,12 @@ def predict():
     print(sentence)
     if("love" in sentence['sentence']):
         sentence["sentence"] = "\U0001F496"
-    if("enjoy" in sentence['sentence']):
+    elif("enjoy" in sentence['sentence']):
         sentence["sentence"] = "\U0001F923"
-    if("kill" in sentence['sentence']):
+    elif("kill" in sentence['sentence']):
         sentence["sentence"] = "\U0001F52A"
+    else:
+        sentence["sentence"] = "\U0001F914"
     return jsonify(sentence)
 
 

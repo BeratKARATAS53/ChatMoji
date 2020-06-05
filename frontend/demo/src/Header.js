@@ -8,9 +8,8 @@ class Header extends Component {
           <a href="/">ChatMoji</a>
         </div>
         <h4 className="demo-body">
-          Don't think, "Did I send the correct emoji according to the sentence I
-          wrote?"
-          <br /> You send the sentence. We add emoji.
+          "Did I add the right emoji to the message?" don't think. <br /> Send
+          your message and step into the magic world of ChatMoji.
         </h4>
       </div>
     );
