@@ -2,7 +2,7 @@ import React, { Component } from 'react';
 import TextMessage from './TextMessage';
 import EmojiMessage from './EmojiMessage';
 import FileMessage from './FileMessage';
-import avatar from "./../../assets/avatar (2).jpg"
+import avatar from "./../../assets/avatar (5).jpg"
 
 
 class Message extends Component {

@@ -25,6 +25,8 @@
     "emoji-js": "3.2.2",
     "prop-types": "15.5.10",
     "react-chat-window": "^1.2.1",
+    "react-custom-scroll": "^4.2.0",
+    "react-custom-scrollbars": "^4.2.1",
     "react-highlight.js": "1.0.5",
     "react-linkify": "^0.2.1",
     "socket.io-client": "2.0.3"

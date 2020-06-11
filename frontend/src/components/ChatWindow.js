@@ -9,7 +9,7 @@ class ChatWindow extends Component {
     super(props);
   }
 
-   onUserInputSubmit(message) {
+  onUserInputSubmit(message) {
     this.props.onUserInputSubmit(message);
   }
 
@@ -22,19 +22,19 @@ class ChatWindow extends Component {
     let classList = ["sc-chat-window"];
     return (
       <div className={classList.join(" ")}>
-        <Header
-          teamName={this.props.agentProfile.teamName}
-          imageUrl={this.props.agentProfile.imageUrl}
-        />
-        <MessageList
-          messages={messageList}
-          imageUrl={this.props.agentProfile.imageUrl}
-        />
-        <UserInput
-          onSubmit={this.onUserInputSubmit.bind(this)}
-          onFilesSelected={this.onFilesSelected.bind(this)}
-          showEmoji={this.props.showEmoji}
-        />
+          <Header
+            teamName={this.props.agentProfile.teamName}
+            imageUrl={this.props.agentProfile.imageUrl}
+          />
+          <MessageList
+            messages={messageList}
+            imageUrl={this.props.agentProfile.imageUrl}
+          />
+          <UserInput
+            onSubmit={this.onUserInputSubmit.bind(this)}
+            onFilesSelected={this.onFilesSelected.bind(this)}
+            showEmoji={this.props.showEmoji}
+          />
       </div>
     );
   }
