@@ -1,0 +1,17 @@
+GET http://127.0.0.1:5000/ HTTP/1.1
+
+###
+POST http://127.0.0.1:5000/predict HTTP/1.1
+content-type: application/json
+
+{
+    "sentence": "I love you"
+}
+
+###
+POST http://127.0.0.1:5000/predictModel HTTP/1.1
+content-type: application/json
+
+{
+    "sentence": "I kill you"
+}
