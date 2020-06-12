@@ -1,10 +1,10 @@
 # Warning!
 
-Bu proje "kingofthestack" tarafından geliştirilen react-chat-window projesi esas alınarak geliştirilmiştir.
+This project was developed based on the react-chat-window project developed by "kingofthestack".
 
 # ChatMoji
 
-`ChatMoji` girilen mesaja göre, o mesajın içeriğine ve anlamına uygun emojinin mesaja eklenip gönderilmesi üzerine kurulmuş bir mesajlaşma arayüzüdür. Sadece görselleştirme amaçlı yazılmıştır. Mesajlaşma olanağı sağlamaz.
+`ChatMoji` is a messaging interface based on the message and the emoji that is appropriate for the content and meaning of that message. It is written for visualization purposes only. It does not provide messaging.
 
 ![Web UI](https://github.com/BeratKARATAS53/ChatMoji/blob/master/frontend/demo/assets/UI.png)
 
