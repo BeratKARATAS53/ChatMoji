@@ -24,6 +24,7 @@ emoji_list = {
     "anger": ["\ud83d\udca2", "\ud83d\uddef\ufe0f", "\ud83c\udf4a"]
 }
 
+
 @app.route('/')
 def home():
     return 'Done', 201
@@ -36,12 +37,15 @@ def predict():
 
     maximum = max(result, key=result.get)
 
-    print(result)
+    new_result = {key: "%"+str(format(value*100, ".1f"))
+                  for key, value in result.items()}
+
+    sentence["result"] = new_result
 
     if(maximum == "fear"):
         sentence["sentence"] = "\U0001F628"
     elif(maximum == "anger"):
-        sentence["sentence"] = "\U0001F624"
+        sentence["sentence"] = "\U0001F621"
     elif(maximum == "joy"):
         sentence["sentence"] = "\U0001F600"
     else:

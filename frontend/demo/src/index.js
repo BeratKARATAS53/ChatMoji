@@ -55,7 +55,9 @@ class Demo extends Component {
           body: JSON.stringify({ sentence: text }),
         });
         let emoji = await response.json();
+        console.log(emoji.result);
         emoji = emoji.sentence;
+
         this.setState({
           newMessagesCount: newMessagesCount,
           messageList: [
@@ -86,8 +88,6 @@ class Demo extends Component {
         <Launcher
           agentProfile={{
             teamName: "chat-moji",
-            imageUrl:
-              "https://a.slack-edge.com/66f9/img/avatars-teams/ava_0001-34.png",
           }}
           onMessageWasSent={this._onMessageWasSent.bind(this)}
           onFilesSelected={this._onFilesSelected.bind(this)}

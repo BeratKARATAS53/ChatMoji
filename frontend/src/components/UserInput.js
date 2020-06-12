@@ -55,7 +55,6 @@ class UserInput extends Component {
   async _submitText(event) {
     event.preventDefault();
     const text = this.userInput.textContent;
-    console.log(text);
     if (text && text.length > 0) {
       (async () => {
         const response = await fetch("http://127.0.0.1:5000/predict", {
@@ -67,6 +66,7 @@ class UserInput extends Component {
           body: JSON.stringify({ sentence: text }),
         });
         let emoji = await response.json();
+        console.log(emoji.result)
         emoji = emoji.sentence
         
         await this.props.onSubmit({

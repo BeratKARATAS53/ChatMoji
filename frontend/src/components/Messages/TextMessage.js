@@ -7,6 +7,8 @@ const TextMessage = (props) => {
       {props.data.emoji ? (
         <Linkify properties={{ target: "_blank" }}>
           {props.data.text + " " + props.data.emoji}
+          {/* <br />
+          {props.data.result} */}
         </Linkify>
       ) : (
         <Linkify properties={{ target: "_blank" }}>{props.data.text}</Linkify>
