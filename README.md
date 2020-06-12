@@ -28,7 +28,7 @@ $ npm install
 ```
 $ pip install flask
 $ pip install flask_cors
-$ pip install request
+$ pip install requests
 $ pip install keras tensorflow pandas numpy
 ```
 
