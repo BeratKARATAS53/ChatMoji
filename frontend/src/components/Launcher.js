@@ -40,7 +40,6 @@ class Launcher extends Component {
           agentProfile={this.props.agentProfile}
           showEmoji={this.props.showEmoji}
         />
-        
       </div>
     );
   }

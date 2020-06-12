@@ -1,26 +1,16 @@
 from flask import Flask, Blueprint
-from flask_cors import CORS
 from flask import request, jsonify, make_response
 from flask import render_template
+from flask_cors import CORS
 import requests
 
 import os
 import sys
-from io import StringIO
 
-import tensorflow as tf
-import pdb
-import pickle
-import pandas as pd
 import numpy as np
 import random
 
-from pathlib import Path
-from keras.preprocessing.sequence import pad_sequences
-
-from emotion.pythonFiles import emotionModel
 from emotion.pythonFiles import testEmotionFlask
-from emotion.nlp import preprocess
 
 
 app = Flask(__name__)
@@ -39,23 +29,8 @@ def home():
     return 'Done', 201
 
 
-# @app.route('/predict', methods=['POST'])
-# def predict():
-#     sentence = request.get_json()
-#     print(sentence)
-#     if("love" in sentence['sentence']):
-#         sentence["sentence"] = "\U0001F496"
-#     elif("enjoy" in sentence['sentence']):
-#         sentence["sentence"] = "\U0001F923"
-#     elif("kill" in sentence['sentence']):
-#         sentence["sentence"] = "\U0001F52A"
-#     else:
-#         sentence["sentence"] = "\U0001F914"
-#     return jsonify(sentence)
-
-
-@app.route('/predictModel', methods=['POST'])
-def predictModel():
+@app.route('/predict', methods=['POST'])
+def predict():
     sentence = request.get_json()
     result = testEmotionFlask.flask_main(sentence["sentence"])
 

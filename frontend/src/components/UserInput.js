@@ -58,7 +58,7 @@ class UserInput extends Component {
     console.log(text);
     if (text && text.length > 0) {
       (async () => {
-        const response = await fetch("http://127.0.0.1:5000/predictModel", {
+        const response = await fetch("http://127.0.0.1:5000/predict", {
           method: "POST",
           headers: {
             Accept: "application/json",
