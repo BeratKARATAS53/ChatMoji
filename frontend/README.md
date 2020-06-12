@@ -1,12 +1,12 @@
 # Warning!
 
-This project was developed based on the react-chat-window project developed by "kingofthestack".
+Bu proje "kingofthestack" tarafından geliştirilen react-chat-window projesi esas alınarak geliştirilmiştir.
 
 # ChatMoji
 
-`ChatMoji` is a messaging interface based on the message and the emoji that is appropriate for the content and meaning of that message. It is written for visualization purposes only. It does not provide messaging.
+`ChatMoji` girilen mesaja göre, o mesajın içeriğine ve anlamına uygun emojinin mesaja eklenip gönderilmesi üzerine kurulmuş bir mesajlaşma arayüzüdür. Sadece görselleştirme amaçlı yazılmıştır. Mesajlaşma olanağı sağlamaz.
 
-![Demo gif of react-chat-window being used](https://puu.sh/xei2F/fd4a121185.gif)
+![Web UI](https://github.com/BeratKARATAS53/ChatMoji/blob/master/frontend/demo/assets/chat-moji-gif.gif)
 
 ## Features
 
@@ -20,8 +20,16 @@ This project was developed based on the react-chat-window project developed by "
 
 ## Installation
 
+#### Frontend
 ```
 $ npm install react-chat-window
+```
+#### Backend
+```
+$ pip install flask
+$ pip install flask_cors
+$ pip install request
+$ pip install keras tensorflow pandas numpy
 ```
 
 ## Example
