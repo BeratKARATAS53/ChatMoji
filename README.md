@@ -22,7 +22,7 @@ This project was developed based on the react-chat-window project developed by "
 
 #### Frontend
 ```
-$ npm install react-chat-window
+$ npm install
 ```
 #### Backend
 ```
