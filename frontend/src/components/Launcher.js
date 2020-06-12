@@ -3,7 +3,6 @@ import React, { Component } from "react";
 import ChatWindow from "./ChatWindow";
 import launcherIcon from "./../assets/logo-no-bg.svg";
 import incomingMessageSound from "./../assets/sounds/notification.mp3";
-import launcherIconActive from "./../assets/close-icon.png";
 
 class Launcher extends Component {
   constructor() {
