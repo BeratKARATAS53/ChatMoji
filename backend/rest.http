@@ -13,7 +13,7 @@ POST http://127.0.0.1:5000/predictModel HTTP/1.1
 content-type: application/json
 
 {
-    "sentence": "I hate to go to the cinema"
+    "sentence": "I like to go to the cinema"
 }
 
 ###
