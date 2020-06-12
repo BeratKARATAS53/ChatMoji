@@ -6,7 +6,7 @@ Bu proje "kingofthestack" tarafından geliştirilen react-chat-window projesi es
 
 `ChatMoji` girilen mesaja göre, o mesajın içeriğine ve anlamına uygun emojinin mesaja eklenip gönderilmesi üzerine kurulmuş bir mesajlaşma arayüzüdür. Sadece görselleştirme amaçlı yazılmıştır. Mesajlaşma olanağı sağlamaz.
 
-![Web UI](https://github.com/BeratKARATAS53/ChatMoji/blob/master/frontend/demo/assets/chat-moji-gif.gif)
+![Web UI](https://github.com/BeratKARATAS53/ChatMoji/blob/master/frontend/demo/assets/UI.png)
 
 ## Features
 
