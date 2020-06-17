@@ -22,13 +22,13 @@ This project was developed based on the react-chat-window project developed by "
 
 #### Frontend
 ```
-$ npm install react-chat-window
+$ npm install
 ```
 #### Backend
 ```
 $ pip install flask
 $ pip install flask_cors
-$ pip install request
+$ pip install requests
 $ pip install keras tensorflow pandas numpy
 ```
 
