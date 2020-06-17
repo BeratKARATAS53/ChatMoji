@@ -8,7 +8,7 @@ import os
 import sys
 
 import numpy as np
-import random
+from random import randint
 
 from emotion.pythonFiles import testEmotionFlask
 
@@ -18,10 +18,10 @@ CORS(app)
 
 
 emoji_list = {
-    "fear": ["\ud83d\ude28", "\ud83d\ude31"],
-    "joy": ["\ud83d\ude02", "\ud83d\ude39", "\ud83d\udd79\ufe0f"],
-    "sadness": ["\ud83d\ude25"],
-    "anger": ["\ud83d\udca2", "\ud83d\uddef\ufe0f", "\ud83c\udf4a"]
+    "fear": ["\ud83d\ude28", "\ud83d\ude31","\ud83d\ude30"],
+    "joy": ["\ud83d\ude02", "\ud83d\ude39", "\ud83d\ude00"],
+    "sadness": ["\ud83d\ude22","\ud83d\ude2d","\ud83d\ude3f"],
+    "anger": ["\ud83d\ude20", "\ud83d\udc7f", "\ud83d\ude24"]
 }
 
 
@@ -42,14 +42,8 @@ def predict():
 
     sentence["result"] = new_result
 
-    if(maximum == "fear"):
-        sentence["sentence"] = "\U0001F628"
-    elif(maximum == "anger"):
-        sentence["sentence"] = "\U0001F621"
-    elif(maximum == "joy"):
-        sentence["sentence"] = "\U0001F600"
-    else:
-        sentence["sentence"] = "\U0001F622"
+    rand = randint(0,2)
+    sentence["sentence"] = emoji_list[maximum][rand]
 
     return jsonify(sentence)
 

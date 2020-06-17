@@ -9,17 +9,4 @@ content-type: application/json
 }
 
 ###
-POST http://127.0.0.1:5000/predict HTTP/1.1
-content-type: application/json
-
-{
-    "sentence": "I like it"
-}
-
-###
-POST http://127.0.0.1:5000/emoji HTTP/1.1
-content-type: application/json
-
-{
-    "type": "anger"
-}
+GET https://emoji-api.com/emojis?search=nose&access_key=27349a1c069d80718c312a90d3589d1a48ca8cf5 HTTP/1.1
