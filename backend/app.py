@@ -18,10 +18,11 @@ CORS(app)
 
 
 emoji_list = {
-    "fear": ["\ud83d\ude28", "\ud83d\ude31","\ud83d\ude30"],
-    "joy": ["\ud83d\ude02", "\ud83d\ude39", "\ud83d\ude00"],
-    "sadness": ["\ud83d\ude22","\ud83d\ude2d","\ud83d\ude3f"],
-    "anger": ["\ud83d\ude20", "\ud83d\udc7f", "\ud83d\ude24"]
+    "fear": ["\ud83d\ude28", "\ud83d\ude31", "\ud83d\ude30"],
+    "joy": ["\ud83d\ude02", "\ud83d\ude06", "\ud83d\ude00", "\ud83d\ude03",
+            "\ud83d\ude04", "\ud83d\ude0a", "\ud83d\ude0d", "\ud83d\ude42"],
+    "sadness": ["\ud83d\ude22", "\ud83d\ude2d", "\ud83d\ude3f"],
+    "anger": ["\ud83d\ude20", "\ud83d\udc7f", "\ud83d\ude24", "\ud83e\udd2c","\ud83d\ude21"]
 }
 
 
@@ -41,8 +42,8 @@ def predict():
                   for key, value in result.items()}
 
     sentence["result"] = new_result
-
-    rand = randint(0,2)
+    
+    rand = randint(0, (len(emoji_list[maximum])-1))
     sentence["sentence"] = emoji_list[maximum][rand]
 
     return jsonify(sentence)
