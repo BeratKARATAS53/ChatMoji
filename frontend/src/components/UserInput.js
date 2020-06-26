@@ -66,13 +66,13 @@ class UserInput extends Component {
           body: JSON.stringify({ sentence: text }),
         });
         let emoji = await response.json();
-        console.log(emoji.result)
+        let result = emoji.result
         emoji = emoji.sentence
         
         await this.props.onSubmit({
           author: "me",
           type: "text",
-          data: { text, emoji },
+          data: { text, emoji, result },
         });
         this.userInput.innerHTML = "";
       })();

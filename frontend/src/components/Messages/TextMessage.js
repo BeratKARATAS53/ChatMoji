@@ -5,13 +5,13 @@ const TextMessage = (props) => {
   return (
     <div className="sc-message--text">
       {props.data.emoji ? (
-        <Linkify properties={{ target: "_blank" }}>
+        <div>
           {props.data.text + " " + props.data.emoji}
-          {/* <br />
-          {props.data.result} */}
-        </Linkify>
+          <hr />
+          <p>{JSON.stringify(props.data.result)}</p>
+        </div>
       ) : (
-        <Linkify properties={{ target: "_blank" }}>{props.data.text}</Linkify>
+        <div>{props.data.text}</div>
       )}
     </div>
   );

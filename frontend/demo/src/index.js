@@ -55,7 +55,7 @@ class Demo extends Component {
           body: JSON.stringify({ sentence: text }),
         });
         let emoji = await response.json();
-        console.log(emoji.result);
+        let result = emoji.result;
         emoji = emoji.sentence;
 
         this.setState({
@@ -65,7 +65,7 @@ class Demo extends Component {
             {
               author: "them",
               type: "text",
-              data: { text, emoji },
+              data: { text, emoji, result },
             },
           ],
         });
