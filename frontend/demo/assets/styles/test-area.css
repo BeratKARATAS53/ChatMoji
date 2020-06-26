@@ -1,3 +1,16 @@
+table {
+  text-align: center;
+  margin: 10px 0px;
+  width: 100%;
+  border-collapse: collapse;
+}
+th,
+td {
+  border: 1px solid #3a7bd5;
+  text-align: center;
+  margin: 10px 0px;
+}
+
 .demo-test-area--wrapper {
   width: 40%;
   display: flex;
@@ -12,30 +25,31 @@
   color: #3a7bd5;
   font-weight: 600;
   font-size: 28px;
-  display: block;
- }
+  margin-top: 75px;
+}
 
 .demo-test-area--title-sub {
-  color:  #3a7bd5;
+  color: #3a7bd5;
   padding-top: 10px;
   display: block;
 }
 
 .demo-test-area {
-  align-self: center;
-  width: 400px;
-  display: flex;
+  width: 450px;
+  display: block;
+  margin-left: 50px;
   flex-direction: column;
+  padding: 30px 0px;
 }
 
 .demo-test-area--preamble {
   padding: 20px 0px;
-  color:  #3a7bd5;
+  color: #3a7bd5;
+  margin-top: 270px;
 }
 
-
 .demo-test-area--button {
-  font-family: Avenir Next, Helvetica Neue, Helvetica,sans-serif;
+  font-family: Avenir Next, Helvetica Neue, Helvetica, sans-serif;
   font-weight: 400;
   margin-top: 20px;
   user-select: none;
@@ -67,7 +81,8 @@
   width: 550px;
 }
 
-.demo-test-area--info a, .demo-test-area--title-sub a {
+.demo-test-area--info a,
+.demo-test-area--title-sub a {
   font-weight: 400;
   text-decoration: none;
   color: #00d2ff;

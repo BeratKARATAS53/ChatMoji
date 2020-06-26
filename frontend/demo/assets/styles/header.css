@@ -1,19 +1,14 @@
 .demo-header {
-  width: 100%;
+  width: 45%;
   color: #3a7bd5;
-  display: flex;
-  justify-content: space-between;
+  display: block;
+  position: absolute;
   max-width: 1300px;
   margin: auto;
-  padding: 40px 0px;
+  padding: 40px 50px;
 }
 .demo-body {
-  width: 100%;
-  color: #3a7bd5;
-  display: flex;
-  justify-content: space-between;
-  margin-left: -100%;
-  padding: 40px 0px;
+  color: #2B92E0;
 }
 
 .demo-header--title {
