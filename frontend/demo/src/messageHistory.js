@@ -1,4 +1,4 @@
-import monsterImgUrl from '../../src/assets/aurora.jpg';
+import monsterImgUrl from "../../src/assets/aurora.jpg";
 
 export default [
   // {type: 'text', author: 'me', data: { text: "Why don't they have salsa on the table?"} },
@@ -11,16 +11,41 @@ export default [
   // {type: 'text', author: 'them', data: { text: 'What?'} },
   // {type: 'text', author: 'me', data: { text: 'This. Just talking.'} },
   // {type: 'text', author: 'them', data: { text: 'Yeah, right.'} },
-  {type: 'text', author: 'me', data: { text: "I'm really serious. I think that's a good idea. "} },
-  {type: 'text', author: 'them', data: { text: "Just talking? Well what's the show about?"} },
-  {type: 'text', author: 'me', data: { text: "It's about nothing."} },
-  {type: 'text', author: 'them', data: { text: 'No story?'} },
-  {type: 'text', author: 'me', data: { text: 'No forget the story. '} },
-  {type: 'text', author: 'them', data: { text: "You've got to have a story."} },
-  {type: 'emoji', author: 'me', data: { emoji: '😋'} },
-  {type: 'file', author: 'me',
+  {
+    type: "text",
+    author: "them",
     data: {
-      url: monsterImgUrl,
-      fileName: 'aurora.jpg'
-    }},
+      text:
+        "I just checked my stock market account and saw that I lost 1000 dollars.",
+      emoji: "😱",
+      result: { anger: "%23.3", fear: "%41.0", joy: "%0.0", sadness: "%35.7" },
+    },
+  },
+  {
+    type: "text",
+    author: "me",
+    data: {
+      text: "It could be from Korona, this virus damaged the markets.",
+      emoji: "😤",
+      result: { anger: "%41.4", fear: "35.7", joy: "%0.1", sadness: "%23.9" },
+    },
+  },
+  {
+    type: "text",
+    author: "them",
+    data: {
+      text: "Meanwhile, mothers happy day #peace, #love &amp; #joy.",
+      emoji: "😍",
+      result: { anger: "%0.0", fear: "%0.0", joy: "%100.0", sadness: "%0.0" },
+    },
+  },
+  {
+    type: "text",
+    author: "me",
+    data: {
+      text: "No gifts?",
+      emoji: "😤",
+      result: { anger: "%39.3", fear: "%32.6", joy: "%1.7", sadness: "%26.4" },
+    },
+  },
 ];
